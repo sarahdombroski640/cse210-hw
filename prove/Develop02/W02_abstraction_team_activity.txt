@@ -1,0 +1,40 @@
+DIAGRAM TEMPLATE
+Class: Person
+Attributes:
+* _givenName : string
+* _familyName : string
+
+Behaviors:
+* ShowEasternName() : void
+* ShowWesternName() : void
+_______________________________________________________
+W02 Develop: Journal Program
+#1
+Class: Journal
+Attributes:
+* _entries : List<string>
+
+Behaviors:
+* DisplayJournalEntries() : void
+* CreateJournalEntry() : void
+* SaveToCSV() : void
+* LoadToCSV() : void
+
+#2
+Class: Entry
+Attributes:
+* _prompt : string
+* _response : string
+* _date : string
+
+Behaviors:
+* DisplayEntry() : void
+* GetEntryAsCSV() : void
+
+#3
+Class: PromptGenerator
+Attributes:
+* _prompts : List<string>
+
+Behaviors:
+* GetRandomPrompt() : void
