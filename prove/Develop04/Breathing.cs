@@ -16,36 +16,25 @@ public class Breathing : Activity
         while (startTime < futureTime)
         {
             Console.Write("Breathe in... ");
-            Console.Write("5");
+            Console.Write(">");
             Thread.Sleep(1000);
-            Console.Write("\b \b");
-            Console.Write("4");
+            Console.Write(">");
             Thread.Sleep(1000);
-            Console.Write("\b \b");
-            Console.Write("3");
+            Console.Write(">");
             Thread.Sleep(1000);
-            Console.Write("\b \b");
-            Console.Write("2");
+            Console.Write(">");
             Thread.Sleep(1000);
-            Console.Write("\b \b");
-            Console.Write("1");
+            Console.WriteLine(">");
             Thread.Sleep(1000);
-            Console.WriteLine("\b \b");
 
-            Console.Write("Now breathe out... ");
-            Console.Write("5");
+            Console.Write("Now breathe out... >>>>>");
+            Console.Write("\b \b");
             Thread.Sleep(1000);
             Console.Write("\b \b");
-            Console.Write("4");
             Thread.Sleep(1000);
             Console.Write("\b \b");
-            Console.Write("3");
             Thread.Sleep(1000);
             Console.Write("\b \b");
-            Console.Write("2");
-            Thread.Sleep(1000);
-            Console.Write("\b \b");
-            Console.Write("1");
             Thread.Sleep(1000);
             Console.WriteLine("\b \b");
             Console.WriteLine();

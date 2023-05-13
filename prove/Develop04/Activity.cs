@@ -23,12 +23,14 @@ public class Activity
         _activityTime = int.Parse(time);
         return _activityTime;
     }
-    public void DisplayEndMessage()
+    public void DisplayEndMessage(int activityCount)
     {
         Console.WriteLine("Well Done!");
         DisplaySpinner();
         Console.WriteLine();
         Console.WriteLine($"You have completed {_activityTime} seconds of the {_activityName}");
+        Console.WriteLine();
+        Console.WriteLine("You have completed " + activityCount + " activites!");
         DisplaySpinner();
     }
     public void DisplaySpinner()
