@@ -5,6 +5,9 @@ class Program
     static void Main(string[] args)
     {
         int activityCount = 0;
+        int breathingCount = 0;
+        int reflectingCount = 0;
+        int listingCount = 0;
 
         Console.Clear();
         Console.WriteLine("Menu Options:");
@@ -23,8 +26,9 @@ class Program
                 ba.DisplayStartMessage();
                 int time = ba.GetActivityTime();
                 ba.DisplayBreathingActivity(time);
-                ba.DisplayEndMessage(activityCount);
                 activityCount += 1;
+                breathingCount += 1;
+                ba.DisplayEndMessage(activityCount, breathingCount, reflectingCount, listingCount);
             }
 
             else if (answer == "2")
@@ -33,8 +37,9 @@ class Program
                 ra.DisplayStartMessage();
                 int time = ra.GetActivityTime();
                 ra.DisplayReflectionActivity(time);
-                ra.DisplayEndMessage(activityCount);
                 activityCount += 1;
+                reflectingCount += 1;
+                ra.DisplayEndMessage(activityCount, breathingCount, reflectingCount, listingCount);
             }
 
             else if (answer == "3")
@@ -43,8 +48,9 @@ class Program
                 la.DisplayStartMessage();
                 int time = la.GetActivityTime();
                 la.DisplayListingActivity(time);
-                la.DisplayEndMessage(activityCount);
                 activityCount += 1;
+                listingCount += 1;
+                la.DisplayEndMessage(activityCount, breathingCount, reflectingCount, listingCount);
             }
 
             Console.Clear();
