@@ -1,0 +1,4 @@
+220
+SimpleGoal~|~Give a talk~|~When asked~|~100~|~True
+EternalGoal~|~Study the scriptures~|~at least 10 minutes~|~50
+ChecklistGoal~|~Go to the temple~|~Three times~|~10~|~500~|~3~|~2
